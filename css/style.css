@@ -1,0 +1,1587 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: auto !important;
+}
+.navbar {
+  /* width: 100%; */
+  height: 60px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  padding-left: 25px;
+}
+.honda-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-icon {
+  font-size: 25px;
+  display: inline-block;
+}
+.menu-label {
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.menu-icon i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+.honda-about {
+  font-size: 15px;
+  font-weight: 600;
+  display: inline;
+  margin-right: 50px;
+}
+.honda-search {
+  width: 21px;
+  height: 21px;
+  display: inline;
+  margin-right: 20px;
+}
+.alert-container {
+  width: 100%;
+  margin-top: 60px;
+  position: relative;
+}
+.alert-container .carousel-item {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.alert-title-narrow{
+  display: none;
+}
+.carousel-item {
+  position: relative;
+  display: initial;
+  float: unset;
+  width: auto;
+  margin-right: initial;
+  backface-visibility: initial;
+}
+.slick-dotted.slick-slider {
+  margin: 0;
+}
+.alert-left {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background: #ff9600;
+}
+.exclamation-icon {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 25px;
+}
+.slick-dots li button :before .fa-exclamation {
+  color: #ff9600;
+}
+.alert-title-wide {
+  margin: 10px;
+  letter-spacing: 0.05em;
+  font-size: 15px;
+  font-weight: 500;
+}
+.alert-right {
+  width: 80%;
+  margin-left: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.alert-triangle {
+  background: #ff9600;
+  width: 20%;
+  float: left;
+  padding-bottom: 500px;
+  margin-bottom: -500px;
+  margin-left: 0px;
+  margin-top: -350px;
+  transform: rotate(18deg);
+}
+.alert-message {
+  display: inline-block;
+  margin: 20px;
+  font-size: 15px;
+}
+.alert-cta a {
+  font-weight: 600;
+  color: #ff9600;
+  text-decoration: none;
+}
+.alert-cta .fa-angle-right {
+  padding-left: 5px;
+}
+.gt-icon {
+  display: inline-block;
+  color: #ff9600;
+}
+.fa-angle-right {
+  color: #ff9600;
+}
+.alert-title-wide {
+  color: #fff;
+}
+.slick-dots li.slick-active button:before {
+  color: #ff9600;
+  opacity: 1;
+}
+.slick-dots li button:before {
+  font-size: 15px;
+}
+
+/* carousel start */
+.slider {
+  position: relative;
+}
+.slider .carousel-item {  
+  width: 100%;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.slider .carousel-item-1 {
+  
+  background-image: url(../images/Honda_Hero_NA-Car-Of-The-Year_Mobile_1536x998.jpg);
+}
+.slider .carousel-item-2 {
+  background-image: url(../images/Honda_Hero_ProjectCourage_Desktop_1600x650.webp);
+}
+.slider .carousel-indicators [data-bs-target] {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #cc1b0c;
+  border: none;
+}
+.slider .carousel-indicators {
+  position: initial;
+  padding: 15px 0;
+}
+
+.carousel-indicators li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots {
+  right: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0 30px 0 0;
+  position: absolute;
+  top: 40%;
+  bottom: 15.5px;
+  width: auto;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  z-index: 0;
+}
+.clearfix:after,
+.clearfix:before {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.carousel-control-prev {
+  width: 35px;
+  height: 50px;
+  top: calc(50% - 30px);
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  transform: translate(0, -50%);
+}
+.carousel-control-next {
+  width: 35px;
+  height: 50px;
+  top: calc(50% - 30px);
+  background: rgba(0, 0, 0, 0.2);
+  transform: translate(0, -50%);
+}
+
+/* BLOG START */
+.list-item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.item-honda9,
+.item-honda4,
+.item-honda5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #eee;
+  height: calc(100vw / 6);
+}
+.item-honda10,
+.item-honda8,
+.item-honda3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #cc1b0c;
+  height: calc(100vw / 6);
+  z-index: 1;
+}
+.item-honda7 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000;
+  height: calc(100vw / 6);
+}
+.item-honda1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #0283cc;
+  height: calc(100vw / 6);
+  z-index: 1;
+}
+.item-honda9 p,
+.item-honda4 p {
+  padding: 10px;
+  color: #533b4b;
+}
+.item-honda10 p,
+.item-honda8 p,
+.item-honda7 p,
+.item-honda3 p,
+.item-honda1 p {
+  padding: 10px;
+  color: #fff;
+}
+.item-honda9 p a,
+.item-honda5 p a,
+.item-honda4 p a {
+  font-weight: bold;
+  color: #040f17;
+  text-decoration: none;
+  border-bottom: 2px solid #040f17;
+}
+.item-honda10 p a,
+.item-honda8 p a,
+.item-honda7 p a,
+.item-honda1 p a,
+.item-honda3 p a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+}
+.item-honda2 {
+  height: 100%;
+}
+.item-honda2 img {
+  height: calc(100vw / 6);
+}
+
+.item-honda-auto-1 {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+  display: inline-flex;
+}
+.item-honda-auto-2 {
+  grid-column: 5 / span 2;
+  grid-row: 1;
+  height: calc(100vw / 6);
+}
+.item-honda-auto-3 {
+  grid-column: 4 / span 2;
+  grid-row: 2;
+  height: calc(100vw / 6);
+}
+.item-honda-auto-4 {
+  grid-column: 3 / span 2;
+  grid-row: 3;
+  height: calc(100vw / 6);
+}
+.item-honda-auto-5 {
+  grid-column: 5 / span 2;
+  grid-row: 3;
+  height: calc(100vw / 6);
+}
+.item-honda-auto-6 {
+  grid-column: 3 / span 2;
+  height: calc(100vw / 6);
+}
+.item-honda-auto-6 img,
+.item-honda-auto-5 img,
+.item-honda-auto-4 img,
+.item-honda-auto-3 img,
+.item-honda-auto-2 img {
+  height: calc(100vw / 6);
+}
+.blog .list-item .item-honda1::after {
+  right: -13px;
+  top: 40%;
+  border-width: 15px 0 15px 15px;
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  border-color: transparent #0283cc;
+  z-index: 1;
+}
+.blog .list-item .item-honda10::after {
+  right: -13px;
+  top: 40%;
+  border-width: 15px 0 15px 15px;
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  border-color: transparent #cc1b0c;
+}
+.blog .list-item .item-honda3::after {
+  right: -13px;
+  top: 40%;
+  border-width: 15px 0 15px 15px;
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  border-color: transparent #cc1b0c;
+}
+.blog .list-item .item-honda7::after {
+  left: -13px;
+  top: 40%;
+  border-width: 15px 15px 15px 0;
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  border-color: transparent #000;
+}
+.blog .list-item .item-honda8::after {
+  left: 42%;
+  top: -15px;
+  border-top: transparent;
+  border-bottom: 15px solid #cc1b0c;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  z-index: 1;
+}
+.blog .list-item .item-honda9::after {
+  left: -14px;
+  top: 40%;
+  border-width: 15px 15px 15px 0;
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  border-color: transparent #eee;
+}
+.blog .list-item .item-honda1:hover {
+  cursor: pointer;
+  filter: contrast(130%);
+}
+.blog .list-item .item-honda3:hover {
+  cursor: pointer;
+  filter: contrast(130%);
+}
+.blog .list-item .item-honda4:hover {
+  cursor: pointer;
+  filter: contrast(130%);
+}
+.blog .list-item .item-honda7:hover {
+  cursor: pointer;
+  filter: brightness(150%) contrast(150%);
+}
+.blog .list-item .item-honda9:hover {
+  cursor: pointer;
+  filter: contrast(130%);
+}
+.blog .list-item .item-honda8:hover {
+  cursor: pointer;
+  filter: contrast(130%);
+}
+/* Blog End */
+
+/* Company Start */
+.company h2 {
+  text-align: center;
+  padding: 35px 0;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 25px;
+}
+.company {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0;
+}
+.link--to {
+  width: 50%;
+  display: inline-block;
+}
+.p2__wrapper {
+  position: relative;
+  height: auto;
+  max-height: 500px;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  color: #fff;
+  animation-duration: 1s;
+}
+.p2--section {
+  width: 100%;
+  padding-bottom: 65%;
+}
+.p2__figure {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.p2 .panel__image,
+.p2__figure {
+  height: 100%;
+}
+.panel__image {
+  width: 100%;
+  height: 540px;
+  background-image: url(../images/hinh20.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.panel__image2 {
+  width: 100%;
+  height: 540px;
+  background-image: url(../images/hinh19.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.panel__image3 {
+  width: 100%;
+  height: 540px;
+  background-image: url(../images/hinh18.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.panel__image4 {
+  width: 100%;
+  height: 540px;
+  background-image: url(../images/hinh21.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.p2__header {
+  font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p2__body {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+}
+.p2 p,
+.p2__text {
+  color: #fff;
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.p2_title {
+  padding-top: 10px;
+  font-weight: bold;
+}
+.p2_title .fa-solid {
+  color: #fff;
+}
+
+/* Company End */
+
+/* About Start */
+.about-honda {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/hinh17.jpg"); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-container {
+  width: 100%;
+  height: 900px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: 65px;
+}
+.about-container h2 {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+.about-container span {
+  font-size: 18px;
+  padding: 10px;
+}
+.about-container span a {
+  color: #040f17;
+  text-decoration: none;
+  font-weight: bold;
+}
+.about-container .fa-solid {
+  color: #040f17;
+}
+.about-container p {
+  font-size: 17px;
+  margin-bottom: 18px;
+  line-height: 22px;
+  color: #040f17;
+}
+/* About End */
+
+/* Subheader START */
+.subheader {
+  color: #333;
+  padding: 35px 0;
+  letter-spacing: 2px;
+  background: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* Subheader END */
+
+/* Visible START */
+.visible {
+  padding-bottom: 70px;
+}
+.fuild-container-visible {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-fuild {
+  position: relative;
+  width: 100%;
+}
+.img-fuild img {
+  width: 100%;
+  display: block;
+}
+.row {
+  width: calc(100% / 3);
+  height: 464px;
+  padding: 0;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+.detail-fuild {
+  height: 0;
+  padding-bottom: 44.56%;
+  padding-top: 18px;
+  position: relative;
+}
+.detail-fuild-content {
+  bottom: 0;
+  font-size: 14px;
+  left: 0;
+  padding: 40px 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+.detail-fuild-content h3 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+.detail-fuild-content p {
+  margin: 0 0 10px;
+}
+.detail-fuild-content a {
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  color: #337ab7;
+}
+.detail-fuild-content a i {
+  color: #337ab7;
+}
+.img-fuild::before {
+  content: "";
+  /* border-top: 30px solid black; */
+  border-bottom: 20px solid #f9f9f9;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.img-1 {
+  position: relative;
+  height: 100%;
+}
+.img-1 img {
+  display: inline;
+  height: 100%;
+  object-fit: cover;
+}
+.hondaIcon-instagram:before {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  font-size: 30px;
+  content: url(../images/icons8-instagram-old-50.png);
+}
+.row-twitter-full {
+  width: calc(100%/3);
+  height: 464px;
+  padding-bottom: 95px;
+  padding-top: 90px;
+  background-color: #f2f2f2;
+  color: #000;
+  position: relative;
+}
+.content-twitter {
+  padding: 30px;
+  font-size: 14px;
+}
+.twitter-avatar {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  vertical-align: top;
+}
+.twitter-avatar img {
+  border-radius: 5px;
+}
+.twitter-copy a,
+.twitter-time a,
+.twitter-info a {
+  text-decoration: none;
+}
+.twitter-info-box {
+  display: inline-block;
+  padding-left: 18px;
+  vertical-align: top;
+}
+.twitter-info-box a {
+  color: #337ab7;
+  text-decoration: none;
+}
+.twitter-copy {
+  display: block;
+  font-size: 22px;
+  font-weight: lighter;
+  margin: 10px 0;
+}
+.twitter-actions a {
+  color: #8f8f8f;
+  font-size: 12px;
+  text-decoration: none;
+}
+.twitter-copy a {
+  color: #337ab7;
+}
+.twitter-time a {
+  color: #337ab7;
+  font-size: 12px;
+}
+.twitter-actions {
+  display: block;
+  margin-top: 10px;
+}
+.twitter-action {
+  margin-right: 15px;
+}
+.row-twitter-full::before {
+  content: url(../images/icons8-twitter-48.png);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/* About End */
+
+/* Contact Start */
+.footer {
+  background-color: #eee;
+  font-size: 16px;
+}
+.footer .contact-container {
+  padding-top: 2%;
+  padding-left: 0;
+  padding-right: 0;
+  width: 95%;
+  margin: 40px;
+}
+.brand ul ul {
+  padding: 0;
+}
+ol,
+ul {
+  padding-left: 0;
+}
+.brand ul .racing,
+.brand,
+.about-us {
+  float: left;
+  width: calc(100% / 3);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer h4 {
+  margin-top: 37px;
+  margin-bottom: 10px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+}
+.footer p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #666;
+}
+.footer .section-title {
+  list-style: none;
+  margin-bottom: 6px;
+}
+.footer .wrapper-link:hover {
+  text-decoration: none;
+  color: #8f8f8f;
+}
+.footer .wrapper-link {
+  text-decoration: none;
+  height: auto;
+  outline: 0;
+}
+.footer b {
+  line-height: 30px;
+  font-size: 13px;
+  display: inline-block;
+  font-weight: 700;
+  vertical-align: middle;
+  color: #000;
+}
+.footer .fa-chevron-right {
+  font-size: 13px;
+  margin: 2px 0 0 -2px;
+  color: #000;
+}
+.social ul {
+  list-style: none;
+}
+.social ul li {
+  display: inline-block;
+}
+.social img {
+  vertical-align: middle;
+}
+.social-content {
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.social-link {
+  padding-left: 10px;
+}
+.terms a {
+  color: #337ab7;
+}
+.terms-container {
+  text-align: center;
+}
+.terms-container p {
+  margin-bottom: 20px;
+}
+
+.final-links {
+  padding-bottom: 30px;
+}
+.final-links-container {
+  font-size: 14px;
+  text-align: center;
+}
+.final-links ul li {
+  display: inline-block;
+}
+.final-links a {
+  font-weight: 800;
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.clean {
+  clear: both;
+}
+@media screen and (max-width: 1200px) {
+  .img-1 img{
+    height: 465px;
+  }
+  .row {
+    padding-bottom: 10px;
+  }
+  .contact-container{
+    width: 100%;
+  }
+  .col-xs-12 {
+    width: (100% / 3);
+  }
+  footer .col-xs-12{
+    padding: 0;
+  }
+  .footer p{
+    font-size: 12px;
+  }
+  .detail-fuild{
+    padding-top: 0;
+    padding-bottom: 40%;
+  }
+  .p2__wrapper .p2__text{
+    width: 50%;
+    font-size: 13px;
+  }
+  .p2 .link--to, .p2__body, .p2__wrapper {
+    width: 100%;
+  } 
+  .link--to{
+    width: 50%;
+  }
+  .p2__header{
+    font-size: 19px;
+    margin: 0 0 10px;
+    display: block;
+  }
+  .panel__image4,
+  .panel__image3,
+  .panel__image2,
+  .panel__image{
+    height: 100%;
+  }
+  .fuild-container-visible .row{
+    width: 50%;
+    height: 100%;
+    display: inline-flex;
+  }
+  
+  .fuild-container-visible .row-twitter-full{
+    width: 50%;
+  }
+  .detail-fuild-content {
+    position: static;
+  }
+  .detail-fuild{
+    background-color: #f2f2f2;
+  }
+  .twitter-info{
+    line-height: 0%;
+  }
+  .row-twitter-full{
+    padding-top: 20px;
+    width: 50%;
+    padding: 0;
+  }
+  .row-twitter-full::before{
+    top:30px;
+  }
+  .footer .contact-container{
+    margin: 15px;
+  }
+  .col-xs-6 {
+    height: 610px;
+    width: 50%;
+  } 
+  .social-content{
+    padding-top: 100px;
+  }
+  .list-item .title{
+    display: none;
+  }
+  .item-honda9 img,
+  .item-honda8 img,
+  .item-honda10 img,
+  .item-honda7 img,
+  .item-honda4 img,
+  .item-honda3 img,
+  .item-honda1 img{
+    width: 70%;
+  }
+  .navbar{
+    padding: 0 30px 0 10px; 
+  }
+  .honda-search{
+    margin: 0;
+  }
+  .honda-search i{
+    width:35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .slick-dots li {
+    display: none;
+  }
+  .alert-message {
+    display: inline-block;
+    margin: 0 ;
+    font-size: 17px;
+  }
+  .alert-title-narrow {
+    font-size: 17px;
+    color: #a3a3a3;
+    display: block;
+    margin: 0;
+  }
+  .alert-cta a{
+    display: block;
+  }
+  .alert-triangle{
+    width: 24%;
+  }
+  .honda-about {
+    display: none;
+  }
+  .nav-right .honda-about {
+    width: 0;
+  }
+  .alert-title-wide {
+    display: none;
+  }
+  .slider .carousel-item {
+    height: 66vw;
+  }
+}
+@media screen and (max-width: 997px){
+  .blog .list-item .hinh3::after{
+    left: 42%;
+    top: -15px;
+    border-top: none;
+    border-bottom: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    content: "";
+    position: absolute;
+    border-color: transparent #cc1b0c;
+  }
+  .navbar{
+    padding: 0 30px 0 10px; 
+  }
+  .honda-search{
+    margin: 0;
+  }
+  .honda-search i{
+    width:35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .slick-dots li {
+    display: none;
+  }
+  .alert-message {
+    display: inline-block;
+    margin: 0 ;
+    font-size: 17px;
+  }
+  .alert-title-narrow {
+    font-size: 17px;
+    color: #a3a3a3;
+    display: block;
+    margin: 0;
+  }
+  .alert-cta a{
+    display: block;
+  }
+  .alert-triangle{
+    width: 22%;
+  }
+  .honda-about {
+    display: none;
+  }
+  .nav-right .honda-about {
+    width: 0;
+  }
+  .alert-title-wide {
+    display: none;
+  }
+  .slider .carousel-item {
+    height: 66vw;
+  }
+  .blog .list-item {
+    height: 100%;
+    display: -ms-inline-grid;
+    grid-template-columns:auto auto auto auto ;
+  }
+  .item-honda9 img,
+  .item-honda8 img,
+  .item-honda10 img,
+  .item-honda7 img,
+  .item-honda4 img,
+  .item-honda3 img,
+  .item-honda1 img{
+    margin-top: 20px;
+    object-fit: cover;
+    width: 80%;
+  }
+  .blog .list-item .item-honda10::after {
+    right: -13px;
+    top: 40%;
+    border-width: 15px 0 15px 15px;
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    border-color: transparent #cc1b0c;
+  }
+  
+  .item-honda-auto-1 img{
+    height: calc(100vw / 3);
+    object-fit: cover;
+  }
+  .item-honda-auto-2,
+  .item-honda-auto-5,
+  .item-honda7,
+  .item-honda4,
+  .item-honda3,
+  .blog .list-item .item-honda1 {
+    height: calc(100vw / 6);
+  }
+  .item-honda-auto-1 {
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 2;
+    display: inline-flex;
+   
+  }
+  .item-honda-auto-2{
+    grid-column: 5;
+    grid-row: 2;
+    height: calc(100vw / 6);
+  }
+  .item-honda-auto-3 {
+    grid-column: 2 / span 3;
+    grid-row: 3;
+    height: calc(100vw / 6);
+  }
+  .item-honda-auto-3 img{
+    object-fit: cover;
+    height: calc(100vw / 6);
+  }
+  .item-honda-auto-4{
+    grid-column: 5;
+    grid-row: 5;
+    height: calc(100vw / 6);
+  }
+  .item-honda-auto-5{
+    grid-column: 1;
+    grid-row: 5;
+    height: calc(100vw / 6);
+  }
+  .item-honda-auto-6{
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .item-honda10{
+    grid-row: 4;
+    grid-column: 4;
+  }
+ .hinh1{
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .hinh2{
+    grid-column: 5;
+    grid-row: 4;
+  }
+  .hinh3{
+    grid-column: 5;
+    grid-row: 1;
+  }
+  .hinh4{
+    grid-column: 4;
+    grid-row: 5;
+  }
+  .item-honda7{
+    grid-column: 5;
+    grid-row: 3;
+  }
+  .item-honda8{  
+    grid-column: 2;
+    grid-row: 5;
+  }
+  .item-honda9{
+    grid-column: 2;
+    grid-row: 4 ;
+  }
+  .item-honda4{
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .blog .list-item .item-honda8::after {
+      left: -14px;
+    top: 40%;
+    border-width: 15px 15px 15px 0;
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    border-color: transparent #cc1b0c;
+}
+  .list-item .title{
+    display: none;
+  }
+  .p2__wrapper .p2__text{
+    width: 90%;
+    font-size: 13px;
+  }
+  .p2 .link--to, .p2__body, .p2__wrapper {
+    width: 100%;
+  } 
+  .link--to{
+    width: 50%;
+  }
+  .p2__header{
+    font-size: 19px;
+    margin: 0 0 10px;
+    display: block;
+  }
+  .panel__image4,
+  .panel__image3,
+  .panel__image2,
+  .panel__image{
+    height: 100%;
+  }
+  .fuild-container-visible .row{
+    width: 50%;
+    height: 100%;
+    display: inline-flex;
+  }
+  
+  .fuild-container-visible .row-twitter-full{
+    width: 50%;
+    height: 100%;
+  }
+  .detail-fuild-content {
+    position: static;
+  }
+  .detail-fuild{
+    padding-top: 0;
+    padding-bottom: 75%;
+  }
+  .twitter-info{
+    line-height: 0%;
+  }
+  .content-twitter{
+    padding: 20px;
+  }
+  .row-twitter-full{
+    margin-top: 20px;
+  }
+  .row-twitter-full::before{
+    top:30px;
+  }
+  .footer .contact-container{
+    margin: 15px;
+  }
+  .col-xs-12  {
+    width: 50%;
+  } 
+  .social-content{
+    padding-top: 100px;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .racing {
+    padding-top: 80%;
+  }
+  html,body{
+    overflow: scroll;
+  }
+  .navbar{
+    padding: 0 10px;
+  }
+  .honda-search{
+    margin: 0;
+  }
+  .alert-detail{
+    margin-left: -10%;
+  }
+  .honda-search i{
+    width:35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .alert-title-narrow {
+    font-size: 17px;
+    color: #a3a3a3;
+    display: inline-block;
+    margin: 0;
+  }
+  .alert-cta a{
+    display: block;
+  }
+  .alert-triangle{
+    width: 22%;
+  }
+  .alert-message {
+    display: inline-block;
+    margin: 0 ;
+    font-size: 17px;
+  }
+  .list-item {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  .slick-dots li {
+    display: none;
+  }
+  .honda-menu .menu-label {
+    display: none;
+  }
+  .honda-about {
+    display: none;
+  }
+  .nav-right .honda-about {
+    width: 0;
+  }
+  .alert-title-wide {
+    display: none;
+  }
+  .col-xs-4 {
+    width: 33.33333333%;
+  }
+  .list-item {
+    position: relative;
+  }
+  .blog .list-item .item-honda7{
+    float: right;
+    height: 194px;
+  }
+  .blog .list-item .item-honda2{
+    float: right;
+    height: 194px;
+    z-index: 0;
+  }
+  .blog .list-item .item-honda-auto-4,
+  .blog .list-item .item-honda3 {
+    float: right;
+    height: 194px;
+    z-index: 1;
+  }
+  .blog .list-item .item-honda8{
+    height: 194px;
+  }
+  .blog .list-item .item-honda-auto-6,
+  .blog .list-item .item-honda9,
+  .blog .list-item .item-honda-auto-5,
+  .blog .list-item .item-honda10,
+  .blog .list-item .item-honda4,
+  .blog .list-item .item-honda1 {
+    float: left;
+    height: 194px;
+    z-index: 1;
+  }
+  .col-xs-8 {
+    width: 66.6666667%;
+  }
+  .item-honda-auto-3{
+    float: right;
+  }
+  .list-item .title{
+    display: none;
+  }
+  .item-honda-auto-1{
+    float: left;
+  }
+  .item-honda-auto-2{
+    float: left;
+  }
+
+  .item-honda-auto-6,
+  .item-honda-auto-5,
+  .item-honda-auto-4,
+  .item-honda-auto-3,
+  .item-honda-auto-1,
+  .item-honda-auto-2{
+    height: 100%;
+  }
+  .item-honda-auto-6 img,
+  .item-honda-auto-5 img,
+  .item-honda-auto-4 img,
+  .item-honda-auto-3 img,
+  .item-honda2 img,
+  .item-honda-auto-2 img{
+    z-index: 0;
+    height: 194px;
+    object-fit: cover;
+  }
+  .item-honda-auto-1 img {
+    z-index: 0;
+    height: 194px;
+    object-fit: cover;
+  }
+  .blog .list-item .item-honda3::after{
+    right: 0;
+    top:calc(100% /2);
+    transform: translate(0,-50%);
+    left: -13px;
+    border-width: 15px 15px 15px 0;
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    border-color: transparent #cc1b0c;
+    z-index: 1;
+  }
+  .blog .list-item .item-honda8::after {
+    left: 100%;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-width: 15px 0 15px 15px;
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    border-color: transparent #cc1b0c;
+    z-index: 1;
+  }
+  .company .h2{
+    height: 30px;
+    margin-top: 30px;
+  }
+  .blog .list-item .item-honda4::after{
+    left: 98%;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-width: 15px 0 15px 15px;
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    border-color: transparent #eee;
+    z-index: 1;
+  }
+  .item-honda9 img,
+  .item-honda8 img,
+  .item-honda10 img,
+  .item-honda7 img,
+  .item-honda4 img,
+  .item-honda3 img,
+  .item-honda1 img{
+    width: 80%;
+    object-fit: cover;
+  }
+  .p2__body{
+    bottom: 0;
+    font-size:16px;
+    padding: 20px 30px;
+    line-height: 20px;
+    transform: translateX(-50%);
+  }
+  .p2__wrapper .p2__text{
+    width: 100%;
+    font-size: 13px;
+  }
+  .p2 .link--to, .p2__body, .p2__wrapper {
+    width: 100%;
+  } 
+  .link--to{
+    width: 100%;
+    display: block;
+
+  }
+  .p2__header{
+    font-size: 19px;
+    margin: 0 0 10px;
+    display: block;
+  }
+  .panel__image4,
+  .panel__image3,
+  .panel__image2,
+  .panel__image{
+    height: 100%;
+  }
+  .about-container{
+    height: 330px;
+  }
+  .about-container{
+    justify-content: flex-end;
+    
+  }
+  .about-container h2{
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    color:#fff;
+    letter-spacing: 1px;
+  }
+  .about-container p {
+    font-size: 17px;
+    margin: 0;
+    line-height: 22px;
+    color:#fff;
+  }
+  .about-container span a {
+    color: #fff;
+  }
+  .about-container .fa-solid {
+    color: #fff;
+  }
+  /* visible start */
+  .img-fuild::before {
+    content: "";
+    /* border-top: 30px solid black; */
+    border-bottom: 20px solid #f9f9f9;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .fuild-container-visible .row{
+    width: 100%;
+    display: inline-flex;
+   
+  }
+  .fuild-container-visible .row-twitter-full{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .detail-fuild-content {
+    position: static;
+  }
+  .detail-fuild{
+  }
+  .twitter-info{
+    line-height: 0%;
+  }
+  .img-fuild{
+    display: inline-flex;
+  }
+  /* footer start */
+  .footer .contact-container{
+    margin: 0;
+  }
+  .ml-0{
+    margin-left: 5%;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+  footer .col-xs-12{
+    padding: 0;
+  }
+  .footer p{
+    font-size: 12px;
+  }
+  /* footer end */
+  .slider .carousel-item {
+    height: 66vw;
+  }
+  
+} 
+
+/* >1200px: không cần kiểm tra nữa vì ban đầu đã chỉnh rồi */
+/* <1200px: desktop */
+/* <992px: tablet */
+/* <576px: mobile: dọc */
